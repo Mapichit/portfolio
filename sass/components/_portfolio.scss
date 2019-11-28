@@ -1,0 +1,32 @@
+.screenshot{
+
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+
+.portfolio{
+    &__links{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(-3rem);
+        margin-right: 4rem;
+
+        @include respond(tab-port){
+            transform: translateY(3rem);
+        }
+
+        
+    }
+
+    &__content{
+        color:white;
+
+        @include respond(tab-land){
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+.btn{
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 80px;
+        cursor: pointer; 
+        transition: all .2s;
+        font-size: 1.6rem;
+
+        background-color: white;
+        color: black;
+
+        @include respond(tab-port){
+            font-size: 1rem;
+        }
+
+       
+
+        
+    }
+
+    &:hover{
+        transform: translateY(-1rem);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+    }
+    
+
+    &:focus,
+    &:active{
+        outline: none;
+        transform: translateY(-1rem);
+        box-shadow: 0 .5rem 1rem rgba(black,.2);
+    }
+
+
+
+    
+    
+}

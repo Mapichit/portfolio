@@ -1,0 +1,14 @@
+.header-text{
+    margin: 0 auto;
+    width: 60%;
+    text-align:center;
+    font-size: 8rem;
+
+    @include respond(tab-land-2){
+        font-size: 6rem;
+    }
+
+    @include respond(phone-2){
+        font-size: 4rem;
+    }
+}
